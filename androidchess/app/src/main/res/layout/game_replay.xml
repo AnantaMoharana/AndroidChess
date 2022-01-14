@@ -1,0 +1,690 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_silver"
+    tools:context=".RewindActivity">
+
+    <TextView
+        android:id="@+id/fg"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:fontFamily="sans-serif-black"
+        android:text="White's turn!"
+        android:textSize="20sp"
+        android:visibility="gone"
+        tools:layout_editor_absoluteX="133dp"
+        tools:layout_editor_absoluteY="16dp"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="384dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/row8"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageButton
+                android:id="@+id/replay_a8"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/whiteBoard"
+                android:src="@drawable/brook"
+
+                />
+
+            <ImageButton
+                android:id="@+id/replay_b8"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/greenBoard"
+                android:src="@drawable/bknight" />
+
+            <ImageButton
+                android:id="@+id/replay_c8"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/whiteBoard"
+                android:src="@drawable/bbishop" />
+
+            <ImageButton
+                android:id="@+id/replay_d8"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/greenBoard"
+                android:src="@drawable/bqueen" />
+
+            <ImageButton
+                android:id="@+id/replay_e8"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/whiteBoard"
+                android:src="@drawable/bking" />
+
+            <ImageButton
+                android:id="@+id/replay_f8"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/greenBoard"
+                android:src="@drawable/bbishop" />
+
+            <ImageButton
+                android:id="@+id/replay_g8"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/whiteBoard"
+                android:src="@drawable/bknight" />
+
+            <ImageButton
+                android:id="@+id/replay_h8"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/greenBoard"
+                android:src="@drawable/brook" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/row7"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="48dp"
+            android:orientation="horizontal"
+            android:weightSum="8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageButton
+                android:id="@+id/replay_a7"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/greenBoard"
+                android:src="@drawable/bpawn"
+
+                />
+
+            <ImageButton
+                android:id="@+id/replay_b7"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/whiteBoard"
+                android:src="@drawable/bpawn" />
+
+            <ImageButton
+                android:id="@+id/replay_c7"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/greenBoard"
+                android:src="@drawable/bpawn" />
+
+            <ImageButton
+                android:id="@+id/replay_d7"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/whiteBoard"
+                android:src="@drawable/bpawn" />
+
+            <ImageButton
+                android:id="@+id/replay_e7"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/greenBoard"
+                android:src="@drawable/bpawn" />
+
+            <ImageButton
+                android:id="@+id/replay_f7"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/whiteBoard"
+                android:src="@drawable/bpawn" />
+
+            <ImageButton
+                android:id="@+id/replay_g7"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/greenBoard"
+                android:src="@drawable/bpawn" />
+
+            <ImageButton
+                android:id="@+id/replay_h7"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/whiteBoard"
+                android:src="@drawable/bpawn" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/row6"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="96dp"
+            android:orientation="horizontal"
+            android:weightSum="8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageButton
+                android:id="@+id/replay_a6"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/whiteBoard" />
+
+            <ImageButton
+                android:id="@+id/replay_b6"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/greenBoard" />
+
+            <ImageButton
+                android:id="@+id/replay_c6"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/whiteBoard" />
+
+            <ImageButton
+                android:id="@+id/replay_d6"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/greenBoard" />
+
+            <ImageButton
+                android:id="@+id/replay_e6"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/whiteBoard" />
+
+            <ImageButton
+                android:id="@+id/replay_f6"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/greenBoard" />
+
+            <ImageButton
+                android:id="@+id/replay_g6"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/whiteBoard" />
+
+            <ImageButton
+                android:id="@+id/replay_h6"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/greenBoard" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/row5"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+
+            android:layout_marginTop="144dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageButton
+                android:id="@+id/replay_a5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                android:layout_weight="1"
+                android:background="@color/greenBoard" />
+
+            <ImageButton
+                android:id="@+id/replay_b5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                android:layout_weight="1"
+                android:background="@color/whiteBoard" />
+
+            <ImageButton
+                android:id="@+id/replay_c5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                android:layout_weight="1"
+                android:background="@color/greenBoard" />
+
+            <ImageButton
+                android:id="@+id/replay_d5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                android:layout_weight="1"
+                android:background="@color/whiteBoard" />
+
+            <ImageButton
+                android:id="@+id/replay_e5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                android:layout_weight="1"
+                android:background="@color/greenBoard" />
+
+            <ImageButton
+                android:id="@+id/replay_f5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                android:layout_weight="1"
+                android:background="@color/whiteBoard" />
+
+            <ImageButton
+                android:id="@+id/replay_g5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                android:layout_weight="1"
+                android:background="@color/greenBoard" />
+
+            <ImageButton
+                android:id="@+id/replay_h5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                android:layout_weight="1"
+                android:background="@color/whiteBoard" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/row4"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="192dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageButton
+                android:id="@+id/replay_a4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                android:layout_weight="1"
+                android:background="@color/whiteBoard" />
+
+            <ImageButton
+                android:id="@+id/replay_b4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                android:layout_weight="1"
+                android:background="@color/greenBoard" />
+
+            <ImageButton
+                android:id="@+id/replay_c4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                android:layout_weight="1"
+                android:background="@color/whiteBoard" />
+
+            <ImageButton
+                android:id="@+id/replay_d4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                android:layout_weight="1"
+                android:background="@color/greenBoard" />
+
+            <ImageButton
+                android:id="@+id/replay_e4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                android:layout_weight="1"
+                android:background="@color/whiteBoard" />
+
+            <ImageButton
+                android:id="@+id/replay_f4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                android:layout_weight="1"
+                android:background="@color/greenBoard" />
+
+            <ImageButton
+                android:id="@+id/replay_g4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                android:layout_weight="1"
+                android:background="@color/whiteBoard" />
+
+            <ImageButton
+                android:id="@+id/replay_h4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                android:layout_weight="1"
+                android:background="@color/greenBoard" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/row3"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+
+            android:layout_marginTop="240dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageButton
+                android:id="@+id/replay_a3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                android:layout_weight="1"
+                android:background="@color/greenBoard" />
+
+            <ImageButton
+                android:id="@+id/replay_b3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                android:layout_weight="1"
+                android:background="@color/whiteBoard" />
+
+            <ImageButton
+                android:id="@+id/replay_c3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/greenBoard"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <ImageButton
+                android:id="@+id/replay_d3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                android:layout_weight="1"
+                android:background="@color/whiteBoard" />
+
+            <ImageButton
+                android:id="@+id/replay_e3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                android:layout_weight="1"
+                android:background="@color/greenBoard" />
+
+            <ImageButton
+                android:id="@+id/replay_f3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                android:layout_weight="1"
+                android:background="@color/whiteBoard" />
+
+            <ImageButton
+                android:id="@+id/replay_g3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                android:layout_weight="1"
+                android:background="@color/greenBoard" />
+
+            <ImageButton
+                android:id="@+id/replay_h3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                android:layout_weight="1"
+                android:background="@color/whiteBoard" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/row2"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="288dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageButton
+                android:id="@+id/replay_a2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                android:layout_weight="1"
+                android:background="@color/whiteBoard"
+                android:src="@drawable/wpawn" />
+
+            <ImageButton
+                android:id="@+id/replay_b2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                android:layout_weight="1"
+                android:background="@color/greenBoard"
+                android:src="@drawable/wpawn" />
+
+            <ImageButton
+                android:id="@+id/replay_c2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/whiteBoard"
+                android:src="@drawable/wpawn" />
+
+            <ImageButton
+                android:id="@+id/replay_d2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                android:layout_weight="1"
+                android:background="@color/greenBoard"
+                android:src="@drawable/wpawn" />
+
+            <ImageButton
+                android:id="@+id/replay_e2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                android:layout_weight="1"
+                android:background="@color/whiteBoard"
+                android:src="@drawable/wpawn" />
+
+            <ImageButton
+                android:id="@+id/replay_f2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                android:layout_weight="1"
+                android:background="@color/greenBoard"
+                android:src="@drawable/wpawn" />
+
+            <ImageButton
+                android:id="@+id/replay_g2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                android:layout_weight="1"
+                android:background="@color/whiteBoard"
+                android:src="@drawable/wpawn" />
+
+            <ImageButton
+                android:id="@+id/replay_h2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                android:layout_weight="1"
+                android:background="@color/greenBoard"
+                android:src="@drawable/wpawn" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/row1"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+
+            android:layout_marginTop="336dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageButton
+                android:id="@+id/replay_a1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                android:layout_weight="1"
+                android:background="@color/greenBoard"
+                android:src="@drawable/whiterook" />
+
+            <ImageButton
+                android:id="@+id/replay_b1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                android:layout_weight="1"
+                android:background="@color/whiteBoard"
+                android:src="@drawable/wknight" />
+
+            <ImageButton
+                android:id="@+id/replay_c1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                android:layout_weight="1"
+                android:background="@color/greenBoard"
+                android:src="@drawable/wbishop" />
+
+            <ImageButton
+                android:id="@+id/replay_d1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/whiteBoard"
+                android:src="@drawable/wqueen" />
+
+            <ImageButton
+                android:id="@+id/replay_e1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                android:layout_weight="1"
+                android:background="@color/greenBoard"
+                android:src="@drawable/wking" />
+
+            <ImageButton
+                android:id="@+id/replay_f1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                android:layout_weight="1"
+                android:background="@color/whiteBoard"
+                android:src="@drawable/wbishop" />
+
+            <ImageButton
+                android:id="@+id/replay_g1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                android:layout_weight="1"
+                android:background="@color/greenBoard"
+                android:src="@drawable/wknight" />
+
+            <ImageButton
+                android:id="@+id/replay_h1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                android:layout_weight="1"
+                android:background="@color/whiteBoard"
+                android:src="@drawable/whiterook" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <Button
+        android:id="@+id/moveForwardButton"
+        android:layout_width="243dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="70dp"
+        android:onClick="moveForward"
+        android:text="Next Move"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

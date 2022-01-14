@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">AndroidChess</string>
+
+    <string name="homeTitle">Chess</string>
+
+    <string name="pastGames">Past Games</string>
+
+    <string name="playChess">Play</string>
+
+    <string name="undo">Undo</string>
+
+    <string name="AI">A.I.</string>
+
+    <string name="drawGame">Draw</string>
+
+    <string name="resignGame">Resign</string>
+
+
+</resources>

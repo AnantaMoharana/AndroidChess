@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="294dp"
+        android:layout_height="325dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="129dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="186dp"
+        android:orientation="vertical"
+        android:weightSum="8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+
+
+            android:id="@+id/QueenPromotion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Queen" />
+
+        <Button
+            android:id="@+id/BishopPromotion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Bishop" />
+
+        <Button
+            android:id="@+id/KnightPromotion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Knight" />
+
+        <Button
+            android:id="@+id/RookPromotion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Rook" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
